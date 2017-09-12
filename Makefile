@@ -4,6 +4,8 @@ SUBLEVEL = 107
 EXTRAVERSION = -XXS5EQG2
 NAME = TOSSUG Baby Fish
 
+TOOLCHAIN_DIR =/home/minealex2244/Desktop/SM-G920F/aarch64-linux-android-4.9/bin/aarch64-linux-android-
+
 # *DOCUMENTATION*
 # To see a list of typical targets execute "make help"
 # More info can be located in ./README
@@ -194,7 +196,7 @@ SUBARCH := $(shell uname -m | sed -e s/i.86/x86/ -e s/x86_64/x86/ \
 # Note: Some architectures assign CROSS_COMPILE in their arch/*/Makefile
 export KBUILD_BUILDHOST := $(SUBARCH)
 ARCH		?=arm64
-CROSS_COMPILE	?=../../../prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-
+CROSS_COMPILE	?=/home/minealex2244/Desktop/SM-G920F/aarch64-linux-android-4.9/bin/aarch64-linux-android-
 
 # Architecture as present in compile.h
 UTS_MACHINE 	:= $(ARCH)
@@ -240,7 +242,7 @@ CONFIG_SHELL := $(shell if [ -x "$$BASH" ]; then echo $$BASH; \
 	  else if [ -x /bin/bash ]; then echo /bin/bash; \
 	  else echo sh; fi ; fi)
 
-CCACHE  = $(srctree)/../../../prebuilts/misc/linux-x86/ccache/ccache
+CCACHE  = ccache
 
 HOSTCC       = $(CCACHE) gcc
 HOSTCXX      = $(CCACHE) g++
@@ -408,7 +410,8 @@ KBUILD_CFLAGS := \
 	-Wno-maybe-uninitialized \
 	-Wno-trigraphs \
 	-Wstrict-prototypes \
-	-Wundef
+	-Wundef \
+	-Wno-unused-variable
 #	$(KBUILD_GRAPHITE)
 
 KBUILD_AFLAGS_KERNEL :=

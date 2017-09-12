@@ -99,3 +99,27 @@ x509.genkey
 # Exynos7420
 #
 !/init/vmm.elf
+
+#
+# minealex2244's ignored files
+#
+output/*
+build_kernel/G920F/Image
+build_kernel/G920F/boot.img
+build_kernel/G920F/ramdisk.gz
+
+build_kernel/G925F/Image
+build_kernel/G925F/boot.img
+build_kernel/G925F/ramdisk.gz
+
+build_kernel/G920W8/Image
+build_kernel/G920W8/boot.img
+build_kernel/G920W8/ramdisk.gz
+
+build_kernel/G925W8/Image
+build_kernel/G925W8/boot.img
+build_kernel/G925W8/ramdisk.gz
+
+builtime_bytes.txt
+dt.img
+offsets_sizes.txt
