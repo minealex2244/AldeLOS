@@ -121,5 +121,4 @@ build_kernel/G925W8/boot.img
 build_kernel/G925W8/ramdisk.gz
 
 builtime_bytes.txt
-dt.img
 offsets_sizes.txt
