@@ -120,20 +120,17 @@ dev)
   echo "minealex2244"
   ;;
 codename)
-  echo "Aldeon"
+  echo "AldeLOS"
   ;;    
 version)
   echo `busybox uname -r`
   ;;
 kernel_version)
-  echo "1.2"
+  echo "1.3"
   ;;
 android_version)
   echo `getprop ro.build.version.release`
   ;;
-build)
-  echo `getprop ro.build.PDA`
-  ;; 
 baseband)
   echo `getprop gsm.version.baseband`
   ;;
